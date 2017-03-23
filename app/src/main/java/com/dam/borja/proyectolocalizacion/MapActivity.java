@@ -100,6 +100,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         lista.add("Normal");
         lista.add("Satellite");
         lista.add("Hibrida");
+        lista.add("Ejemplo");
 
         ArrayList lista2 = new ArrayList();
         lista2.add("1X");
