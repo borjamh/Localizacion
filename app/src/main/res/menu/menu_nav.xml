@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/menuitem_localizacion"
+            android:enabled="true"
+            android:icon="@drawable/mylocation"
+            android:title="Mi localizacion"
+            android:visible="true"></item>
+
+        <item xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spinner_vista_nav"
+            android:title="Vista"
+            app:actionLayout="@layout/spinner_nav" />
+
+        <item xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spinner_zoom_map"
+            android:icon="@drawable/zoom_ico_bn"
+            android:title="Zoom"
+            app:actionLayout="@layout/spinner_zoom_map" />
+
+        <item xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/marker_position"
+            android:title="Marcar posicion"
+            android:icon="@drawable/marker"/>
+
+    </group>
+
+
+    <item android:title="Configuraciones generales">
+
+        <menu>
+
+            <item xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/switch_loc_map"
+                android:title="Actualización"
+                app:actionLayout="@layout/switch_nav" />
+
+            <item xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/switch_pos_map"
+                android:title="Ver mi posicion"
+                app:actionLayout="@layout/switch_pos" />
+
+        </menu>
+
+    </item>
+
+
+</menu>

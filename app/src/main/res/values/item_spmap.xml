@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="elementos_spinner">
+        <item>Normal</item>
+        <item>Satelite</item>
+        <item>Hibrida</item>
+        <item>Terreno</item>
+    </array>
+
+</resources>

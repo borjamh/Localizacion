@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/localization"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="localización con maps"
+            android:layout_gravity="center"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/rectangulo_lonlat"
+            android:padding="20dp"
+            android:id="@+id/boton_mapas"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/rectangulo_lonlat"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lat"
+                android:drawablePadding="20dp"
+                android:hint="cargando latitud actual"
+                android:id="@+id/edit_latitud"
+                android:enabled="false"
+            />
+
+            <EditText
+                android:id="@+id/edit_longitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lon"
+                android:drawablePadding="20dp"
+                android:hint="cargando longitud actual"
+                android:enabled="false"
+                />
+
+
+            <ToggleButton
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/selector_toggle"
+                android:drawablePadding="20dp"
+                android:textOff="Actualizaciones desactivadas"
+android:id="@+id/toggle_actualizacion"
+                android:textOn="Actualizaciones activadas" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
